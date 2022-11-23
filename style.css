@@ -21,6 +21,9 @@
     --fifth: #254a58;
 
 }
+html {width: 100vw; 
+    overflow-x: hidden;}
+
 
 .instagram a:hover {color: rgb(236, 77, 77);}
 .facebook a:hover {color: rgb(236, 77, 77);}
@@ -40,12 +43,54 @@ a{
     background-color:  rgb(54, 54, 54);  /* цвет плашки */
     border-radius: 20px;       /* закругления плашки */
   }
+
 .element-animation{
     opacity: 0;
 }
 .element-animation.element-show{
     opacity: 1;
     transition: all 1s;
+}
+
+.element-animation.scroll-right{
+    opacity: 0;
+    transform: translateX(10%);
+}
+.scroll-right.element-show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.element-animation.scroll-left{
+    opacity: 0;
+    transform: translateX(-10%);
+}
+.scroll-left.element-show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.element-animation.rotate-left{
+    opacity: 0;
+    transform: rotate(-20deg);
+}
+.rotate-left.element-show{
+    opacity: 1;
+    transform: rotate(0);
+    transition: all 1s;
+}
+
+.element-animation.rotate-right{
+    opacity: 0;
+    transform: rotate(20deg);
+}
+.rotate-right.element-show{
+    opacity: 1;
+    transform: rotate(0);
+    transition: all 1s;
+
 }
 
 body{
@@ -74,7 +119,7 @@ body{
 .p1{
     position: absolute; 
     bottom:40%; right:-13%; width: 380px; height: auto; 
-    rotate: 30deg; z-index: 1;filter: hue-rotate(31deg);
+    rotate: z-index: 1;filter: hue-rotate(31deg);
     transform: translateY(800%);
     animation: p1 1.3s forwards;
     transition: 0.5s;
@@ -84,8 +129,8 @@ body{
 
 }
 @keyframes p1 {
-0% {transform: translateX(90%);}
-100% {transform: translateY(0);}
+0% {transform: translateX(90%) rotate(-30deg);}
+100% {transform: translateY(0) rotate(30deg);}
 }
 .p2{
     position: absolute;
@@ -98,35 +143,37 @@ body{
     transform: translateY(-80%);
     animation: p2 1.3s forwards;
     transition: 0.5s;
+    transform-origin: center;
     }
 @keyframes p2 {
-0% {transform: translateX(-90%);}
+0% {transform: translateX(-90%) rotate(30deg);}
 100% {transform: translateY(0);}
 }
 .p2:hover{
     width: 510px;
 }
+.p5{
+    position: absolute;
+    left:-130px;
+    bottom:70%;
+    width: 290px;
+    height: auto;
+    rotate: 30deg;
+    z-index: -1;
+    transition: 0.5s;
+    filter: brightness(0.3);
+}
 .p3{
     position: absolute;
-    bottom:-2%;
-    left:-50%;
-    width: 310px;
+    counter-reset: none;
+    right:-120px;
+    bottom:40%;
+    width: 290px;
     height: auto;
-    rotate: 30deg;
-    z-index: 1;
-    transform: translateY(-80%);
+    rotate: 307deg;
+    z-index: -1;
     transition: 0.5s;
-}
-.p4{
-    position: absolute;
-    bottom:-32%;
-    right:-30%;
-    width: 300px;
-    height: auto;
-    rotate: 30deg;
-    z-index: 1;
-    transform: translateY(-80%);
-    transition: 0.5s;
+    filter: brightness(0.3);
 
 }
 .main-container{
@@ -243,7 +290,6 @@ body{
     flex-wrap: nowrap;
     overflow-x: auto;
     position: relative;
-
 }
 .feedback-block{
     display: flex;
@@ -291,18 +337,23 @@ body{
 .feedback-btn a:hover{
         filter: brightness(0.8);
 }
-.gaallery{
+.gallery{
     overflow: hidden;
     position: relative;
 }
 .gallery-container{
-    overflow: hidden;
-    position: relative;
     margin: 0 250px;
+}
+.creators{
+    position: relative;
+    overflow: hidden;
+
 }
 .creator-block{
     display: flex;
     margin-bottom: 70px;
+    overflow: hidden;
+
 }
 .creator-img{
     height: 400px;
@@ -396,20 +447,24 @@ body{
         display: none;
     }
     .p1{
-        width: 100px;
+        width: 30vw;
         height: auto;
+        bottom: 50%;
     }
     .p1:hover{
         width: 110px;
     }
     .p2{
-        width: 180px;
+        width: 50vw;
         height: auto;
         bottom:30%;
         left:-25%
     }
     .p2:hover{
         width: 190px;
+    }
+    .p5, .p3{
+        display: none;
     }
     .info-container{
         flex-direction: column;
