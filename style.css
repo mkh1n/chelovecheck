@@ -161,7 +161,7 @@ body{
     rotate: 30deg;
     z-index: -1;
     transition: 0.5s;
-    filter: brightness(0.3);
+    filter: brightness(0.36);
 }
 .p3{
     position: absolute;
@@ -173,7 +173,7 @@ body{
     rotate: 307deg;
     z-index: -1;
     transition: 0.5s;
-    filter: brightness(0.3);
+    filter: brightness(0.36);
 
 }
 .main-container{
@@ -328,7 +328,7 @@ body{
 }
 .feedback-btn a{
     color: #000;
-    padding: 20px;
+    padding: 13px;
     background-color: #ffdc6b;
     transition: 0.3s;
     border-radius: 7px 7px;
@@ -353,7 +353,6 @@ body{
     display: flex;
     margin-bottom: 70px;
     overflow: hidden;
-
 }
 .creator-img{
     height: 400px;
@@ -367,6 +366,9 @@ body{
 .creator-text{
     padding-left: 0;
     padding-right: 50%;
+}
+.creator-text a{
+    color:#e9c46a
 }
 .invert{
     order:-1;
@@ -386,6 +388,17 @@ body{
     order: 1
 }
 
+.tickets{
+    font-size: 20px;
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius: 13px 13px;
+    margin:10px;
+    transition: 0.3s;
+}
+.tickets:hover{
+    filter: brightness(0.8);
+}
 .container{
     margin:0 200px
 }
@@ -505,6 +518,13 @@ body{
     .creator-img{
         width: 50vw;
         height: auto;
+    }
+
+    #rita{
+        width: 35vw;
+    }
+    #petr{
+        width: 55vw;
     }
     .creator-block{
         flex-direction: column;
