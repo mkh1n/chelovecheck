@@ -606,6 +606,8 @@ body{
     justify-content: center;
 }
 .footer{
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
@@ -732,6 +734,9 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
+    }
+    .creator-block:last-child{
         margin-bottom: 20px;
     }
     .invert{
