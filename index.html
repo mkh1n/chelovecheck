@@ -42,8 +42,9 @@
                         <span>из часов</span>
                     </div>
                         <div class="main-subtitle">
-                            Маргарита Смирнова<br>
-                            Детский моноспектакль
+                            Детский моноспектакль<br>
+                            Маргариты Смирновой
+
                         </div>
                 </div>
                 <img class="main-photo" src="img/1.png" alt="header photo">
@@ -64,21 +65,26 @@
                         Вместе они превращают детскую спальню в мир, где есть месяц и звёзды, весна и кошки, 
                         необыкновенные превращения подушек с участием зрителей, а самое главное — много уморительного и смешного.<br>
                         Вместе со зрителями Антошка заводит новых друзей, знакомится с героями стихов Саши Черного и поет песни.<br>
-                        Присоединитесь и вы к ночному приключению Антошки!
+                        Присоединитесь и вы к веселому приключению Антошки!
                     </div>
                 </div>
                 <div class="info-right">
                     <div class="info-right-text">
-                        <div class="info-right-row">
-                            <img class='info-icon' src='icons/face.png'>
+                        <div class="info-right-row element-animation scroll-right">
+                            <img class='info-icon' src='icons/face.svg'>
                             Рекомендовано к<br>
                             просмотру:<span>5+</span>
                         </div>
-                        <div class="info-right-row">
-                            <img class="info-icon" src="icons/clock.png">
+                        <div class="info-right-row element-animation scroll-right" >
+                            <img class="info-icon" src="icons/clock.svg">
                             Спектакль без антракта<br>
                                 продолжительность:
                             <span>1 час</span>
+                        </div>
+                        <div class="info-right-row element-animation scroll-right">
+                            <img class="info-icon" src="icons/topic.svg">
+                            Жанр
+                            <span  id='topic'style="text-align: center;">Интерактивный спектакль<br>с элементами театра кукол</span>
                         </div>
                     </div>
                 </div>
@@ -89,50 +95,127 @@
                 <img src="img/pill3.png" class='p3 element-animation rotate-right' style="bottom: 20%">
                 <div class="gallery-container">
                     <h1 style="color:#fff; text-align:center">Галерея</h1>
-                    <div class="image-gallery">
+                    <div class="image-gallery pc-gal">
                       <div class="column">
-                        <div class="image-item">
-                          <img src="img/2.jpg" alt="" />
-                          <div class="overlay"><span></span></div>
+                        <div class="img-block">
+                            <a href="#1"><img class = "gall-header" src="img/2.jpg">
+                            <a href="#x" class="overlay" id="1"></a>
+                            <img class = "img-popup" src="img/2.jpg">
                         </div>
-                        <div class="image-item">
-                            <img src="img/8.jpg" alt="" />
-                            <div class="overlay"><span></span></div>
-                          </div>
-                          <div class="image-item">
-                            <img src="img/9.jpg" alt="" />
-                            <div class="overlay"><span></span></div>
-                          </div>
+                        <div class="img-block">
+                            <a href="#2"><img class = "gall-header" src="img/8.jpg">
+                            <a href="#x" class="overlay" id="2"></a>
+                            <img class = "img-popup" src="img/8.jpg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#3"><img class = "gall-header" src="img/9.jpg">
+                            <a href="#x" class="overlay" id="3"></a>
+                            <img class = "img-popup" src="img/9.jpg">
+                        </div>
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe" loading='lazy'src="https://www.youtube.com/embed/fbqjD0U5jVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
                       </div>
                       <div class="column">
-                        <div class="image-item">
-                            <img src="img/3.png" alt="" />
-                            <div class="overlay"><span></span></div>
-                          </div>
-                          <div class="image-item">
-                              <img src="img/6.jpg" alt="" />
-                              <div class="overlay"><span></span></div>
-                            </div>
-                            <div class="image-item">
-                              <img src="img/7.jpg" alt="" />
-                              <div class="overlay"><span></span></div>
-                            </div>
+                        <div class="img-block">
+                            <a href="#5"><img class = "gall-header" src="img/3.png">
+                            <a href="#x" class="overlay" id="5"></a>
+                            <img class = "img-popup" src="img/3.png">
+                        </div>
+                        <div class="img-block">
+                            <a href="#6"><img class = "gall-header" src="img/6.jpg">
+                            <a href="#x" class="overlay" id="6"></a>
+                            <img class = "img-popup" src="img/6.jpg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#7"><img class = "gall-header" src="img/7.jpg">
+                            <a href="#x" class="overlay" id="7"></a>
+                            <img class = "img-popup" src="img/7.jpg">
+                        </div>
                       </div>
                       <div class="column">
-                        <div class="image-item">
-                            <img src="img/10.jpg" alt="" />
-                            <div class="overlay"><span></span></div>
-                          </div>
-                          <div class="image-item">
-                              <img src="img/4.jpg" alt="" />
-                              <div class="overlay"><span></span></div>
-                            </div>
-                            <div class="image-item">
-                              <img src="img/11.jpg" alt="" />
-                              <div class="overlay"><span></span></div>
-                            </div>
+                        <div class="img-block">
+                            <a href="#8"><img class = "gall-header" src="img/10.jpg">
+                            <a href="#x" class="overlay" id="8"></a>
+                            <img class = "img-popup" src="img/10.jpg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#11"><img class = "gall-header" src="img/4.jpg">
+                            <a href="#x" class="overlay" id="11"></a>
+                            <img class = "img-popup" src="img/4.jpg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#12"><img class = "gall-header" src="img/11.jpg">
+                            <a href="#x" class="overlay" id="12"></a>
+                            <img class = "img-popup" src="img/11.jpg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#13"><img class = "gall-header" src="img/100.jpeg">
+                            <a href="#x" class="overlay" id="13"></a>
+                            <img class = "img-popup" src="img/100.jpeg">
+                        </div>
                       </div>
                     </div>
+                    <div class="mob-gal">
+                        <div class="image-gallery">
+                            <div class="column">
+                              <div class="img-block">
+                                  <a href="#01"><img class = "gall-header" src="img/2.jpg">
+                                  <a href="#x" class="overlay" id="01"></a>
+                                  <img class = "img-popup" src="img/2.jpg">
+                              </div>
+                              <div class="img-block">
+                                  <a href="#02"><img class = "gall-header" src="img/8.jpg">
+                                  <a href="#x" class="overlay" id="02"></a>
+                                  <img class = "img-popup" src="img/8.jpg">
+                              </div>
+                              <div class="img-block">
+                                  <a href="#03"><img class = "gall-header" src="img/9.jpg">
+                                  <a href="#x" class="overlay" id="03"></a>
+                                  <img class = "img-popup" src="img/9.jpg">
+                              </div>
+                              <div class="img-block">
+                                <a href="#07"><img class = "gall-header" src="img/7.jpg">
+                                <a href="#x" class="overlay" id="07"></a>
+                                <img class = "img-popup" src="img/7.jpg">
+                            </div>
+                            <div class="img-block">
+                                <a href="#012"><img class = "gall-header" src="img/11.jpg">
+                                <a href="#x" class="overlay" id="012"></a>
+                                <img class = "img-popup" src="img/11.jpg">
+                            </div>
+                            </div>
+                            <div class="column">
+                              <div class="img-block">
+                                  <a href="#05"><img class = "gall-header" src="img/3.png">
+                                  <a href="#x" class="overlay" id="05"></a>
+                                  <img class = "img-popup" src="img/3.png">
+                              </div>
+                              <div class="img-block">
+                                <a href="#08"><img class = "gall-header" src="img/10.jpg">
+                                <a href="#x" class="overlay" id="08"></a>
+                                <img class = "img-popup" src="img/10.jpg">
+                            </div>
+                              <div class="img-block">
+                                  <a href="#06"><img class = "gall-header" src="img/6.jpg">
+                                  <a href="#x" class="overlay" id="06"></a>
+                                  <img class = "img-popup" src="img/6.jpg">
+                              </div>
+                              <div class="img-block">
+                                <a href="#011"><img class = "gall-header" src="img/4.jpg">
+                                <a href="#x" class="overlay" id="011"></a>
+                                <img class = "img-popup" src="img/4.jpg">
+                            </div>
+                              
+                            </div>
+                            </div>
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe" loading='lazy'src="https://www.youtube.com/embed/fbqjD0U5jVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                      </div>
                 </div>
             </div>
             <div class="creators">
@@ -151,7 +234,7 @@
                             Маргарита Смирнова<br>
                             Окончила РГИСИ в 2000 году по специальности "артист драматического театра и кино",
                             курс М. А. Левшина.<br>
-                            Мастер актерского мастерства и педагог.
+                            Актриса театра и кино, тренер актерского мастерства, больничный клоун.
                         </div>
                     </div>
                 </div>
@@ -231,8 +314,9 @@
         <div class="feedback element-animation">
             
             <h1 style="color:#fff; text-align:center; margin-top:0">Отзывы</h1>
-            <div class="feedback-container">
-                <div class="feedback-block">
+            <div class="feedback-container element-animation scroll-right">
+                <img src="img/pill2.png" class='p5 element-animation rotate-left' style="scale:1.2;">
+                <div class="feedback-block ">
                     <div class="feedback-header">
                         <h2 style="margin:5px 0">И детям и взрослым</h2>
                         <h3 style="margin:5px 0">Римма Левина</h3>
@@ -298,6 +382,48 @@
             </div>
             <div class="feedback-btn">
                 <a href="https://www.afisha.ru/performance/81952/" target="_ blank"><b>Оставить отзыв</b></a>
+            </div>
+        </div>
+        <div class="contacts">
+            <h1 style="color:#fff; text-align:center; margin-bottom:10px">Обратная связь</h1>
+            <div class="contacts-container">
+                <div class="vk-group-holder element-animation scroll-left">
+                    <div class="vk-group-text">
+                        Ближайшие спектакли
+                    </div>
+                    <div class="vk-group ">
+                        <div class="social vk vk-group-link">
+                            <a href="https://vk.com/izchasov" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                        </div>
+                        <div class="vk-group-name">
+                            Группа ВК
+                        </div>
+                    </div>
+                </div>
+                <div class="vk-group-holder element-animation scroll-right">
+                    <div class="vk-group-text">
+                        Мои контакты
+                    </div>
+                    <div class="contact-group">
+                        <div class="contacts-center">
+                            <div class="social-media-contacts">
+                                <div class="social vk">
+                                    <a href="https://vk.com/ritasmirnova" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                                </div>
+                                <div class="social facebook">
+                                    <a href="https://www.facebook.com/actressmargo" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                                </div>
+                                <div class="social instagram">
+                                    <a href="https://www.instagram.com/tvorita_smirnova/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                                </div>
+                        </div>
+                        <a class=email href="mailto: ritasmi@list.ru"><img class="icon" src="icons/email-icon.png" alt="">  ritasmi@list.ru</a>     
+
+                        
+                    </div>
+
+                </div>
+                
             </div>
         </div>
         <div class="footer-holder">
