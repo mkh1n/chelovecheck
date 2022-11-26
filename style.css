@@ -513,7 +513,7 @@ body{
 }
 .feedback-btn a:hover{
     scale: 1.02;
-        filter: brightness(0.7);
+    filter: brightness(0.7);
 }
 .contacts-container{
     position: relative;
