@@ -33,17 +33,17 @@ a{
     text-decoration: none;
 }
 ::-webkit-scrollbar {
-    width: 12px;     
-    height: 12px;          /* ширина scrollbar */
+    width: 10px;     
+    height: 10px;
   }
 ::-webkit-scrollbar-track {
     width: 0;
-    background: transparent;        /* цвет дорожки */
+    background: transparent;
   }
 ::-webkit-scrollbar-thumb {
-    background-color:  rgb(54, 54, 54);  /* цвет плашки */
-    border-radius: 20px;       /* закругления плашки */
-  }
+    background-color:  rgb(54, 54, 54);
+    border-radius: 20px;
+}
 
 .element-animation{
     opacity: 0;
@@ -512,6 +512,7 @@ body{
 
 }
 .feedback-btn a:hover{
+    scale: 1.02;
         filter: brightness(0.7);
 }
 .contacts-container{
@@ -539,12 +540,11 @@ body{
     position: absolute;
     left:5%;
     bottom:40%;
-
-}
-.vk-group-link .fa-2x{
     font-size: 7em;
+    pointer-events: none;
 }
 .vk-group{
+    display: block;
     position: relative;
     background-image:url(img/vk-bg.jpg);
     width: 100%;
@@ -555,6 +555,11 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    transition: 0.3s;
+}
+.vk-group:hover{
+    filter: brightness(0.7);
+    scale: 1.01;
 }
 .vk-group-name{
     backdrop-filter:  brightness(0.6) blur(20px);
@@ -596,7 +601,7 @@ body{
     text-decoration: underline rgb(236, 77, 77);
 }
 .site{
-    margin-top: 20px;
+    margin: 20px;
 }
 .site-a{
     color:#fff;
@@ -619,7 +624,7 @@ body{
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     padding: 30px;
     width: 70%;
     border-top: solid 2px rgb(218, 218, 218);
@@ -828,9 +833,8 @@ body{
         margin: 0 20px;
         flex-direction: column;
     }
-    .vk-group{
+    .vk-group-holder{
         height: 300px;
-        margin-bottom: 30px;
     }
       .vk-group-holder{
         width: 100%;
@@ -838,10 +842,13 @@ body{
     .vk-group-text{
         font-size: 23px;
     }
-  .vk-group-link .fa-2x{
-    font-size: 5em;
-  }
+    .vk-group-link{
+        font-size: 5em;
+    }
   .contact-group{
     height: 220px;
+  }
+  .footer{
+    font-size: 15px;
   }
 }
