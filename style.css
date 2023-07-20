@@ -432,7 +432,7 @@ body{
 }
 .creator-text{
     padding-left: 0;
-    padding-right: 50%;
+    padding-right: 100px;
 }
 .creator-text a{
     color:#e9c46a;
@@ -442,7 +442,7 @@ body{
     order:-1;
 }
 .invert .creator-text{
-    padding-left: 50%;
+    padding-left: 100px;
     padding-right: 0;
 }
 .creator-text b{
@@ -462,27 +462,30 @@ body{
     flex-wrap: nowrap;
     overflow-x: auto;
     position: relative;
+    scroll-snap-type: x mandatory;
+    justify-content: start;
+    scroll-margin: 20px;
+
 }
 .feedback-block{
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px;
     background-color: rgb(54, 54, 54);
     color:rgb(255, 255, 255);
-    width: 28vw;
-    height: auto;
-    margin: 20px 30px;
+    width: 387px;
     flex: 0 0 auto;
     border-radius: 10px 10px;
     transition: 0.3s;
+    scroll-snap-align: start;
+    margin: 20px;
+
+
 }
-.feedback-block:hover{
-    scale: 1.01;
-    filter:brightness(1.2)
-}
+
 .feedback-block span{
     color:#e9c46a;
     font-size: 50px;
@@ -530,6 +533,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     width: 50%;
+    position: relative;
 }
 .vk-group-text{
     font-size: 30px;
@@ -553,19 +557,15 @@ body{
     border-radius: 10px 10px;
     overflow: hidden;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    background-position: center;
+
     transition: 0.3s;
 }
 .vk-group:hover{
     filter: brightness(0.7);
     scale: 1.01;
 }
-.vk-group-name{
-    backdrop-filter:  brightness(0.6) blur(20px);
-    width: 100%;
-    padding: 5px 10px;
-}
+
 .contacts-center{
     display: flex;
     flex-direction: column;
@@ -636,21 +636,19 @@ body{
     text-decoration: underline #e9c46a;
 
 }
-  @media(max-width: 780px){
-    .social-media{
-        display: none;
-    }
+@media(max-width: 1407px){
     .main-container{
         flex-direction: column;
         height: unset;
         height: 100vh;
-        justify-content: flex-end;
+        display: grid
     }
     .main{
         height: 100vh;
     }
     .main-title{
-        font-size: 55px;
+        margin-top: 20px;
+        font-size: 70px;
         text-align: center;
     }
     .main-title span{
@@ -663,13 +661,63 @@ body{
     }
     .main-photo{
         height: 66vh;
-        align-self: unset;
-        justify-self: end;
-    
+        align-self: end;
+        justify-self: center;
     }
+    .p1{
+        width: 250px;
+    }
+    .p2{
+        bottom: unset;
+        width:300px;
+        top:40%;
+    }
+    .info-left-text{
+        padding-left: 30px;
+    padding-right: 20px;
+    }
+    .creator-block{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .creator-block:last-child{
+        margin-bottom: 20px;
+    }
+    .invert{
+        order:1;
+    }
+    .invert .creator-text{
+        padding: 0;
+    }
+    .creator-text-holder{
+        width: 100vw;    }
+    .creator-text{
+        font-size: 16px;
+        padding: 0;
+        margin:10px;
+        margin-top: 20px;
+    }
+    .social-media{
+        display: none;
+    }
+    
     .main-btn-holder{
         display: none;
     }
+}
+
+  @media(max-width: 780px){
+    .main-title{
+        font-size: 55px;
+        text-align: center;
+    }
+    .main-title span{
+        font-size: 50px;
+        text-align: center;
+    }
+    
     .p1{
         width: 30vw;
         height: auto;
@@ -746,29 +794,7 @@ body{
     #petr{
         width: 55vw;
     }
-    .creator-block{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-    .creator-block:last-child{
-        margin-bottom: 20px;
-    }
-    .invert{
-        order:1;
-    }
-    .invert .creator-text{
-        padding: 0;
-    }
-    .creator-text-holder{
-        width: 100vw;    }
-    .creator-text{
-        font-size: 14px;
-        padding: 0;
-        margin:10px;
-        margin-top: 20px;
-    }
+    
     .gallery-container{
         margin: 0 20px;
     }
@@ -790,12 +816,14 @@ body{
       .feedback-container{
         margin: 0 10px;
         overflow-y: hidden;
+        scroll-margin: 10px;
       }
       .feedback-block{
-        width: 70vw;
+        width: 280px;
         margin:0;
         padding: 10px;
-        margin:10px
+        margin: 10px;
+
       }
       .feedback-block span{
         font-size: 40px;
